@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Maritime Transportation Quiz – K. Rocero</title>
+<style>
+:root{--bg:#f4f7fb;--card:#fff;--tx:#14223a;--mu:#5a6b85;--bd:#d5dde9;--pr:#0b5cab;--ok:#d7f2e0;--okb:#1f9d55;--no:#fde0e0;--nob:#d93636;--h:#e8f1fb;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1726;--card:#16233a;--tx:#e8eef8;--mu:#9bacc7;--bd:#2b3b58;--pr:#5aa6ee;--ok:#12392440;--okb:#3ec77a;--no:#4a1c1f;--nob:#ff6b6b;--h:#1d2f4d}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5}
+.w{max-width:760px;margin:0 auto;padding:16px}
+header{text-align:center;margin:8px 0 14px}h1{font-size:1.3rem;margin:0}header p{margin:2px 0;color:var(--mu);font-size:.9rem}
+.bar{height:8px;background:var(--bd);border-radius:8px;overflow:hidden}.bar i{display:block;height:100%;width:0;background:var(--pr);transition:width .3s}
+.meta{display:flex;justify-content:space-between;color:var(--mu);font-size:.85rem;margin:6px 0 12px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:18px}
+.sit{background:var(--h);border-left:4px solid var(--pr);padding:10px 12px;border-radius:8px;font-size:.9rem;margin-bottom:14px}.sit b{display:block;margin-bottom:2px}
+.q{font-weight:600;font-size:1.05rem;margin:0 0 12px}
+.o{display:block;width:100%;text-align:left;font:inherit;color:inherit;background:var(--card);border:2px solid var(--bd);border-radius:10px;padding:11px 13px;margin:8px 0;cursor:pointer}
+.o:hover:not(:disabled){border-color:var(--pr);background:var(--h)}
+.o:disabled{cursor:default}.o.ok{background:var(--ok);border-color:var(--okb)}.o.no{background:var(--no);border-color:var(--nob)}
+.btn{font:inherit;font-weight:600;background:var(--pr);color:#fff;border:0;border-radius:10px;padding:10px 20px;cursor:pointer;margin-top:12px}.btn:disabled{opacity:.4;cursor:default}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn{color:#0e1726}}
+.tm{font-weight:700;font-variant-numeric:tabular-nums;color:var(--pr)}.tm.low{color:var(--nob)}
+.tb{height:6px;background:var(--bd);border-radius:6px;overflow:hidden;margin:-6px 0 12px}.tb i{display:block;height:100%;width:100%;background:var(--pr);transition:width .25s linear}.tb.low i{background:var(--nob)}
+.tu{background:var(--no);border-left:4px solid var(--nob);padding:8px 12px;border-radius:8px;font-size:.9rem;margin-top:10px}
+.st{text-align:center}.st h2{margin:0 0 6px;font-size:1.2rem}.st p{color:var(--mu);margin:4px 0 14px;font-size:.92rem}
+.nm{font:inherit;width:100%;max-width:360px;padding:11px 13px;border:2px solid var(--bd);border-radius:10px;background:var(--card);color:var(--tx);text-align:center}.nm:focus{outline:0;border-color:var(--pr)}
+.er{color:var(--nob);font-size:.85rem;min-height:1.2em;margin:6px 0 0}
+.sm{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:12px 0}.sm div{background:var(--h);border-radius:10px;padding:8px 14px;min-width:110px}.sm b{display:block;font-size:1.3rem}.sm span{font-size:.8rem;color:var(--mu)}
+.hist{font-size:.88rem;color:var(--mu);margin:8px 0}
+.btn.alt{background:transparent;color:var(--pr);border:2px solid var(--pr);margin-left:6px}
+.res{text-align:center}.big{font-size:2.6rem;font-weight:800;margin:6px 0}
+</style></head><body><div class="w">
+<header><h1>Maritime Transportation – Grade 11</h1><p>Term 2 Summative 2 · Seamanship Skills and Hoisting and Dipping Flags</p><p>Created by: K. Rocero</p></header>
+<div class="bar"><i id="pb"></i></div>
+<div class="meta"><span id="cnt"></span><span class="tm" id="tm"></span><span id="sc"></span></div>
+<div class="tb" id="tbar"><i id="tfill"></i></div>
+<div class="card" id="box"></div></div>
+<script>
+const G=[
+{t:"Situation 1",p:"Deck cadet Liza is on the forecastle of the ferry MV Sibugay Star at Ipil. A mooring line has a knot that pulled tight under the strain of the tide. The boatswain hands her a pointed steel tool, tells her to rest the line on a flat surface, and reminds her to keep the point turned away from her body. After the knot is freed, he asks her to make a fixed loop at the end of a dock line that will not slip under load yet can be untied easily afterward. He then asks her to join two ropes of unequal thickness and warns her never to use a reef knot for a load that may shift.",q:[
+["What is the pointed steel tool that the boatswain handed to Liza?",["A sailmaker’s palm","A serving mallet","A marlin spike","A wire rope clip"],2],
+["Which knot should Liza tie to make the fixed loop in the dock line?",["A bowline at the end of the line","A granny knot at the end of the line","An overhand knot at the end of the line","A reef knot at the end of the line"],0],
+["Which list correctly gives the main jobs of the pointed tool?",["Parting strands for splicing, sewing canvas seams, and drawing seizings tight","Parting strands for splicing, cutting steel wire, and driving wedges into hatch seams","Measuring rope length, freeing jammed knots, and drawing lashings tight","Parting strands for splicing, freeing jammed knots, and drawing seizings tight"],3],
+["Why did the boatswain warn Liza against using a reef knot for the load that may shift?",["The knot is meant for ropes of unequal size, so it cannot hold two ropes of equal size","The knot cuts the rope fibers faster than any other knot, so the rope would part at once","The knot can slip or work loose when the load moves, so a more secure knot is required","The knot jams so tightly under load that it can never be untied without cutting the rope"],2],
+["Weeks later, Liza finds the same pointed tool lying wet on deck with a rough burr on its point. If she uses it unchanged, what is the most likely result?",["The moisture will help the point glide, so the strands will open faster and more evenly","The point will pass cleanly through the strands, since a rough tip leaves tighter seizings","The burr may catch and slip, injuring her hand and fraying the fibers of the rope","The burr will grip the jammed knot better, so the knot will loosen more safely"],2]]},
+{t:"Situation 2",p:"The mate of the cargo ship MV Zamboanga Dawn asks cadet Ben to check the mooring lines before arrival. One braided polyester line has a hard, flattened patch near its middle and several chafed yarns. A polypropylene rope floats beside the hull, and a wire sample on deck shows a kink and one broken wire. The maker’s table gives a breaking load of 12 tonnes for one rope, and the mate tells Ben to divide that figure by a safety factor to decide how much the rope may carry in use. Ben is also asked to bind the cut end of a three-strand rope with twine so that the strands do not spread.",q:[
+["What is the name of the load that Ben obtains by dividing the breaking load by the safety factor?",["The ultimate breaking load of the rope","The safe working load of the rope","The initial shock load of the rope","The average test load of the rope"],1],
+["Which list names defects that tell Ben a line should be withdrawn from use?",["Chafe, glazing, hard or flattened spots, and broken yarns","Broken yarns, light fuzzing at the surface, smooth lay, and clean strands","Fresh color, hard or flattened spots, kinks, and uniform thickness","Chafe, glazing, even lay, and soft flexibility throughout"],0],
+["Which list names the three whippings Ben may choose from to finish the cut end?",["Common, racking seizing, and west country","Common, sailmaker’s, and west country","Common, sailmaker’s, and parcelling","Sailmaker’s, flat seizing, and west country"],1],
+["Why should Ben whip the cut end of the three-strand rope before it is stowed?",["The binding replaces the need for an eye splice, so the end can be fastened straight to a ring","The binding holds the strands together, so the end cannot unlay or fray and stays easy to handle","The binding fuses the strands into one, so the rope’s breaking load rises above the maker’s figure","The binding seals the lay against water, so the rope no longer has to be dried after use"],1],
+["Suppose the mate wants to use the polyester line with the flattened patch to snatch a grounded boat free with sudden jerks. What is the most likely result?",["The flattened patch will spread the shock evenly, so the line can carry its full table load","The line will stretch and recover, so any sudden jerk is safe if the breaking load is high","The line will hold, since polyester always carries more than its rated load when it is wet","The worn section may part under sudden shock, far below the load in the maker’s table"],3]]},
+{t:"Situation 3",p:"At the repair quay in Zamboanga City, the crew of MV Sibugay Pride prepares a spare hawser. The boatswain wants two lengths of rope joined so that the join stays as thin as the rope and still runs through a block. For a wire rope, he wants a loop fitted around a thimble with clips, the saddle of each clip placed on the live end. Later, a wire rope must be held under load while a winch is slipped, and the anchor chain must be secured on the forecastle after anchoring. When a crewman steps near the bight of the loaded line to help, the boatswain orders him back at once.",q:[
+["Which device is named for securing the anchor chain on the forecastle after anchoring?",["A devil’s claw","A sailmaker’s palm","A serving mallet","A rope stopper"],0],
+["Which list gives the correct way to fit and care for the wire rope clips?",["Saddle on the dead end, U-bolt on the live end, spacing near one rope diameter, and retightening after the first load","Saddle on the dead end, U-bolt on the live end, spacing near six rope diameters, and retightening after the first load","Saddle on the live end, U-bolt on the dead end, spacing near one rope diameter, and no retightening once the nuts are set","Saddle on the live end, U-bolt on the dead end, spacing near six rope diameters, and retightening after the first load"],3],
+["Why would the boatswain choose a long splice rather than a short splice for the hawser that must run through a block?",["A long splice needs fewer tucks, so the join can be taken apart quickly after the job is done","A long splice forms an eye at the join, so the hawser can be hooked onto the block","A long splice keeps the rope’s thickness, so the join runs through the block without jamming","A long splice swells at the join, so it keeps more strength than the rest of the rope"],2],
+["Why did the boatswain order the crewman away from the bight of the loaded line?",["A line under strain can tighten or whip without warning, so the bight is a danger zone","The bight is the weakest part of any rope, so a person’s weight there could make it part","The bight carries the stopper, so a person near it may release the load by mistake","The bight must stay clear so the officer on watch can read the marks along the line"],0],
+["On another vessel, the crew skips retightening the wire rope clips after the rope first takes the load. What will most likely happen as the rope settles?",["The dead end will carry the whole load, so the clips become unnecessary after the first pull","The clips can loosen as the rope settles, letting the loop slip and risking failure under load","The thimble will absorb the slack, so the loop will stay as secure as it was when fitted","The clips will tighten themselves as the wire stretches, which makes the joint stronger with each pull"],1]]},
+{t:"Situation 4",p:"Near the Zamboanga Strait, several vessels meet. A cargo ship flying a red swallow-tailed flag is loading drums of flammable liquid. A boat passes close to a vessel flying a white-and-blue swallow-tailed flag because its divers are working underwater. A tanker nearing the pilot station hoists a flag with vertical yellow and blue stripes, while another ship, already carrying its pilot, hoists a flag of white and red halves. Later, a fishing boat’s crewman falls into the sea, and the master hoists a diagonal yellow-and-red flag. At the quarantine anchorage, a ship with a healthy crew hoists a plain yellow flag.",q:[
+["Which signal is carried by the flag with vertical yellow and blue stripes on the tanker?",["Flag P, which asks for a pilot","Flag G, which shows a pilot is aboard","Flag G, which asks for a pilot","Flag H, which asks for a pilot"],2],
+["Which list correctly gives the meanings shown by the cargo ship, the dive boat, and the pilot-carrying ship, in that order?",["Dangerous goods, pilot on board, and diver down","Dangerous goods, diver down, and pilot on board","Diver down, dangerous goods, and pilot on board","Dangerous goods, diver down, and pilot requested"],1],
+["Why must the small boat stay well clear at slow speed when it sees the white-and-blue swallow-tailed flag?",["A pilot is guiding the vessel, so fast boats could distract the pilot from the narrow channel","A person has fallen overboard, so the wash could carry the victim away from rescuers","Flammable cargo is being handled by the vessel, so a spark near it could start a fire","Divers may be in the water near the vessel, so wash and propellers could endanger them"],3],
+["Suppose the tanker hoists flag H instead of flag G by mistake. What is the most likely result?",["The pilot station will understand correctly, since the colors of G and H are read alike","The pilot station will treat the tanker as carrying dangerous goods and close the whole channel to it","The pilot station will send two launches at once, since both flags request a pilot","The station will think a pilot is aboard and may send no launch, leaving the tanker unassisted"],3],
+["Flag G asks for a pilot at sea but means something else on the fishing grounds, and flag P also has two meanings depending on the setting. Which rule best guides a watchkeeper reading such flags?",["Judge by color alone, since the pattern of a flag is ignored in the International Code of Signals","Take the first meaning learned as fixed, since each flag has one meaning in all waters","Read the flag with the ship’s location and activity, then confirm it in the signal book","Wait for the vessel to dip its ensign, since a dip confirms every single-flag signal"],2]]},
+{t:"Situation 5",p:"The passenger ferry MV Mabini is crossing the Sulu Sea in daylight at slow speed when the officer of the watch sights several vessels displaying black shapes. The first vessel shows two balls in a vertical line near its foremast and drifts without power after an engine failure. The second is a tug pulling a barge on a very long line and shows a diamond shape. The third, a fishing boat, shows two cones with their points together high on its mast. Farther away, a heavily loaded ship in shallow water shows a cylinder, and a vessel lying in a bay shows a single ball in its fore part. The officer notes each shape in the logbook and teaches the cadet that vessels use shapes by day to tell others what they are doing, and that every shape must be shown where it can best be seen.",q:[
+["What does the single ball in the fore part of the vessel lying in the bay show?",["A vessel lying aground","A vessel not under command","A vessel engaged in fishing","A vessel lying at anchor"],3],
+["Which list correctly states what the first three vessels show?",["Not under command, a tow longer than 200 meters, and engaged in fishing","At anchor, a tow shorter than 200 meters, and engaged in fishing","Aground, a tow longer than 200 meters, and constrained by her draught","Not under command, a tow shorter than 200 meters, and engaged in fishing"],0],
+["Which statement gives the correct proportions of the cylinder and the cone?",["The cylinder is twice as tall as it is wide, and the cone is as tall as its base is wide","The cylinder is as tall as it is wide, and the cone is twice as tall as its base is wide","The cylinder is twice as tall as it is wide, and the cone is half as tall as its base is wide","The cylinder is half as tall as it is wide, and the cone is twice as tall as its base is wide"],0],
+["Why do vessels such as the tug and the fishing boat show shapes in daylight?",["The shapes show the ship’s registry, so port authorities can check its papers on arrival","The shapes tell approaching ships what the vessel is doing, so they can keep clear and act safely","The shapes replace the navigation lights, so the ship may switch them off both by day and by night","The shapes warn only vessels of the same kind, so unlike ships may ignore the signal"],1],
+["Suppose a dredger working in a narrow channel hoists only a single diamond instead of ball-diamond-ball. What would an approaching ship most likely conclude?",["That the dredger is fishing, so the ship may expect its nets to be hauled on both sides","That the dredger is aground, so the ship should stop and wait for the tide to rise","That the dredger is lying at anchor, so the ship could pass safely at any distance and at any speed","That a tug has a long tow, so the ship may misjudge the dredger’s limited ability to move aside"],3]]},
+{t:"Situation 6",p:"Aboard the training ship MV Pioneer, the master orders the crew to lift a box of flags to the signal deck with a gun tackle made of two single blocks before the ensign is dipped in salute to a passing naval ship. The crew inspect the flag, lanyard, blocks, and sheave, read the safe working load marked on the block, and inform the officer of the watch before hoisting. The hoister hauls hand over hand, smartly and steadily, while another crewman holds the fall on a cleat. A cadet stands beneath the box to watch the sheave and is ordered away at once. When the naval ship comes abeam, the ensign, flying close up, is lowered to the dip on the master’s order and held there until the other ship dips its own ensign. It is then hoisted close up again.",q:[
+["Which tackle did the crew rig using two single blocks?",["A single whip","A luff tackle","A gun tackle","A handy billy"],2],
+["Which list gives the checks and actions the crew carried out before and during the hoist?",["Inspect the gear, read the load rating, inform the officer of the watch, and haul steadily hand over hand","Inspect the gear, skip the load rating, inform the officer of the watch, and haul in sudden jerks to start the load","Inspect the gear, read the load rating, inform the officer after the lift, and haul steadily hand over hand","Inspect only the flag, read the load rating, inform the officer of the watch, and haul steadily hand over hand"],0],
+["Why was the cadet ordered away from beneath the box?",["The cadet’s weight would add to the load, which could exceed the safe working load of the block","If the gear or fall fails, the load can drop, and a person beneath could be badly injured","The cadet would block the officer’s view of the ensign, which could delay the salute","The cadet might trip over the lanyard, which is the only moving part during the lift"],1],
+["Why is the ensign held at the dip until the naval ship answers?",["The dip is a courtesy salute that ends only when the other ship returns it, so the ensign stays down","The dip keeps the lanyard clear of the staff, so the ensign is lowered while the two ships pass","The dip changes the flag state of the ship, so it is held until the other ship has left the area","The dip is a distress call that must stay lowered until the other ship replies with a pilot flag signal"],0],
+["Suppose the crew must lift a heavier box, still within the rated limits of their gear, while using less pull on the fall. Which plan best applies what they learned about tackle?",["Remove one sheave to shorten the fall, since fewer parts always make the lift easier","Lead the fall from the standing block, since that gives one more part than leading from the moving block","Rig a luff tackle and lead the fall from the moving block, so more parts share the load","Keep the gun tackle but haul faster, since speed reduces the force needed on the fall"],2]]},
+{t:"Bonus Items",p:"",q:[
+["Which knot joins two ropes of unequal thickness?",["Reef knot","Sheet bend","Granny knot","Figure-of-eight"],1],
+["Which hitch is best for making a line fast to a bollard under a steady pull?",["Overhand knot","Slip knot","Round turn and two half hitches","Thumb knot"],2],
+["What is the main purpose of a figure-of-eight knot at the end of a line?",["To join two ropes","To act as a stopper so the line cannot run out through a block","To make a fixed loop","To bind the end of the rope"],1],
+["Which synthetic rope is light enough to float on water?",["Nylon","Polyester","Wire","Polypropylene"],3],
+["Why is nylon rope often chosen for mooring and towing?",["It stretches and absorbs shock loads","It does not stretch at all","It floats and never wears","It is cheaper than any wire"],0],
+["What is a short splice used for?",["Making a permanent loop","Joining two ropes permanently, with the join thicker than the rope","Joining two ropes so the join runs freely through a block","Whipping the end of a rope"],1],
+["What does an eye splice make?",["A permanent loop at the end of a rope","A join between two ropes","A stopper at the end of a line","A temporary binding"],0],
+["Which tool is worn on the hand to push a needle through canvas?",["Marlin spike","Serving mallet","Fid","Sailmaker’s palm"],3],
+["What is a serving mallet used for?",["Opening strands for splicing","Sewing canvas","Laying serving tightly over a rope or wire","Cutting rope ends"],2],
+["What is a fid mainly used for?",["Opening the strands of large rope for splicing","Hoisting flags","Holding anchor chain","Measuring rope"],0],
+["What does the plain yellow flag (Q) tell the port authority?",["Vessel is on fire","The vessel is healthy and requests free pratique","Man overboard","Vessel needs a pilot"],1],
+["Which flag, yellow and red in diagonal quarters, means “man overboard”?",["Flag A","Flag O","Flag G","Flag H"],1],
+["What does flag P (the Blue Peter) mean in harbor?",["Diver down","Pilot on board","All persons should report aboard as the vessel is about to proceed to sea","Dangerous goods are being handled"],2],
+["Which day shape shows a vessel aground?",["One black ball","Two black balls","A black cylinder","Three black balls in a vertical line"],3],
+["Which day shapes show a vessel restricted in her ability to maneuver?",["Ball, diamond, ball in a vertical line","Two cones points together","Two balls in a vertical line","One black cone point up"],0],
+["What is the ideal mechanical advantage of a single whip?",["1, as it only changes the direction of the pull","2","3","4"],0],
+["A rope has a breaking load of 12 tonnes and a safety factor of 6. What is its safe working load?",["72 tonnes","6 tonnes","18 tonnes","2 tonnes"],3],
+["What is a sheave?",["The rope that passes through a block","The grooved wheel in a block over which the rope runs","The hook of a tackle","The handle of a mallet"],1],
+["How should a natural or synthetic rope be stowed after use?",["Wet and tightly coiled in a closed locker","Dry, coiled, and kept in a cool ventilated place away from chemicals","Left in the sun on deck","Wrapped in plastic while still damp"],1],
+["What should be done with a wire rope that has a kink?",["Keep using it with a lighter load","Hammer it flat and reuse it","Treat it as damaged, since a kink permanently weakens it, and withdraw it from use","Add one more clip over the kink"],2]]}
+];
+const Q=[];G.forEach(g=>g.q.forEach(x=>Q.push({t:g.t,p:g.p,q:x[0],o:x[1],a:x[2]})));
+const LIMIT=50;let i=0,s=0,done=false,timer=null,deadline=0,name="",attempts=0,hist=[];const $=id=>document.getElementById(id),box=$("box");
+function ui(on){$("pb").parentNode.style.display=on?"":"none";document.querySelector(".meta").style.display=on?"":"none";$("tbar").style.display=on?"":"none"}
+function intro(){
+ stopT();ui(false);name="";attempts=0;hist=[];
+ box.innerHTML='<div class="st"><h2>Welcome, student!</h2><p>Enter your name to begin. Each question has a 50-second timer.</p><input class="nm" id="nm" type="text" maxlength="60" placeholder="Your full name" autocomplete="name"><div class="er" id="er"></div><button class="btn" id="go">Start quiz</button></div>';
+ const inp=$("nm");
+ const go=()=>{const v=inp.value.trim().replace(/\s+/g," ");if(!v){$("er").textContent="Please type your name first.";inp.focus();return}name=v;begin()};
+ $("go").onclick=go;inp.onkeydown=e=>{if(e.key==="Enter")go()};inp.focus();
+}
+function begin(){attempts++;i=0;s=0;ui(true);show()}
+function stopT(){if(timer){clearInterval(timer);timer=null}}
+function tick(){
+ const left=Math.max(0,Math.ceil((deadline-Date.now())/1000));
+ $("tm").textContent="⏱ "+left+"s";
+ $("tfill").style.width=(Math.max(0,deadline-Date.now())/(LIMIT*1000)*100)+"%";
+ const low=left<=10;$("tm").classList.toggle("low",low);$("tbar").classList.toggle("low",low);
+ if(left<=0)timeUp();
+}
+function startT(){stopT();deadline=Date.now()+LIMIT*1000;$("tbar").style.display="";tick();timer=setInterval(tick,250)}
+function timeUp(){
+ if(done)return;done=true;stopT();
+ const bs=box.querySelectorAll(".o");bs.forEach((x,k)=>{x.disabled=true;if(k==Q[i].a)x.classList.add("ok")});
+ const u=document.createElement("div");u.className="tu";u.textContent="Time’s up! No point for this item.";
+ box.insertBefore(u,$("nx"));$("nx").disabled=false;
+}
+function show(){
+ const c=Q[i];done=false;
+ $("cnt").textContent="Item "+(i+1)+" of "+Q.length;$("sc").textContent="Score: "+s;$("pb").style.width=(i/Q.length*100)+"%";
+ box.innerHTML="";
+ if(c.p){const d=document.createElement("div");d.className="sit";d.innerHTML="<b>"+c.t+"</b>"+c.p;box.appendChild(d)}
+ const q=document.createElement("p");q.className="q";q.textContent=(i+1)+". "+c.q;box.appendChild(q);
+ c.o.forEach((t,k)=>{const b=document.createElement("button");b.className="o";b.textContent=t;b.onclick=()=>pick(b,k);box.appendChild(b)});
+ const n=document.createElement("button");n.className="btn";n.id="nx";n.disabled=true;n.textContent=i==Q.length-1?"See results":"Next";n.onclick=()=>{i++;i<Q.length?show():end()};box.appendChild(n);
+ startT();
+}
+function pick(b,k){
+ if(done)return;done=true;stopT();
+ const bs=box.querySelectorAll(".o");bs.forEach(x=>x.disabled=true);
+ if(k==Q[i].a){b.classList.add("ok");s++}else b.classList.add("no");
+ $("sc").textContent="Score: "+s;$("nx").disabled=false;
+}
+function end(){
+ stopT();$("tm").textContent="";$("tbar").style.display="none";
+ $("pb").style.width="100%";$("cnt").textContent="Finished";
+ hist.push(s);
+ const p=Math.round(s/Q.length*100),re=attempts-1;
+ box.innerHTML='<div class="res"><p>Quiz complete</p><h2 id="nmo" style="margin:4px 0"></h2><div class="big">'+s+' / '+Q.length+'</div><p>Final score: '+p+'%</p>'+
+ '<div class="sm"><div><b>'+attempts+'</b><span>Attempt'+(attempts==1?'':'s')+'</span></div><div><b>'+re+'</b><span>Retake'+(re==1?'':'s')+'</span></div></div>'+
+ (hist.length>1?'<div class="hist">Scores per attempt: '+hist.map((h,k)=>(k+1)+') '+h+'/'+Q.length).join(' · ')+'</div>':'')+
+ '<button class="btn" id="rs">Retake quiz</button><button class="btn alt" id="nw">New student</button></div>';
+ $("nmo").textContent=name;
+ $("rs").onclick=begin;$("nw").onclick=intro;
+}
+intro();
+</script></body></html>
